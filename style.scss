@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$gray: #dadada;
+$lightblue: #d4e2d4;
+$lightpink: #ecb390;
+$darkpink: #df7861;
+$darkgreen: #61df9a;
+
+@mixin centerFlex($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  background-color: $gray;
+  @include centerFlex(column);
+  height: 900px;
+  border: $lightpink 1px solid;
+  border-radius: 5px;
+  button {
+    background-color: $darkpink;
+    color: #fff;
+    border: none;
+    padding: 8 * 2px 12 * 3px;
+    margin: 5px;
+    font-size: 20px;
+    &:hover {
+      background-color: $lightpink;
+      color: $darkpink;
+      cursor: pointer;
+      border: none;
+    }
+  }
+  .btn-container {
+    @include centerFlex(row);
+  }
+  .active {
+    background-color: $darkgreen;
+  }
+}
+
+.to-speech {
+  .contentToRead {
+    width: 360px;
+    max-width: 360px;
+    height: 100px;
+    border: $darkpink 2px solid;
+    padding: 5px;
+  }
+}
+.speech-output {
+  padding: 20px 40px;
+  background-color: $lightblue;
+  width: 290px;
+  height: 100px;
+  border: $darkpink 2px solid;
+  margin: 5px;
+  .contentToRead {
+    max-height: 100px;
+    max-width: 290px;
+    min-height: 100px;
+    min-width: 290px;
+  }
+}
+
+.errors {
+  text-transform: uppercase;
+  color: $darkpink;
+  font-size: 18px;
+}
+
+header {
+  margin: 10px;
+  width: 390px;
+  h2 {
+    color: $darkpink;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    text-align: justify;
+    margin: 10px;
+  }
+}
+
+footer {
+  background-color: $lightblue;
+  padding: 12px;
+}
+textarea {
+  resize: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: $gray;
+}
+body::-webkit-scrollbar-thumb {
+  background: $darkpink;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: $darkgreen;
+}

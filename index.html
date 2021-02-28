@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Deafs Talks</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Deafs Talks</h2>
+        <p>
+          Welcome to deafs talk! With this app you can talk safly with your deaf
+          partner while you are driving!
+        </p>
+        <h2>How It Works?</h2>
+        <p>
+          While you are driving you can't use sign language to talk with your
+          partner, or look at your partner while they using sign language and
+          loose your focus on the road.
+        </p>
+        <p>
+          Deafs Talks helps you to speak to them by clicking a button and
+          recording what you want to say and display it on the screen so your
+          partner can read it. Then, your partner can type what they want to say
+          and click the Read button and you will hear what they typed without
+          loosing your focus.
+        </p>
+      </header>
+      <div class="btn-container">
+        <button class="talk" id="talk">Talk</button>
+        <button class="read" id="read">Read</button>
+        <button class="clear">Clear</button>
+      </div>
+
+      <div class="speech-output"><h2 class="content"></h2></div>
+      <div class="to-speech">
+        <textarea class="contentToRead"></textarea>
+      </div>
+      <div class="errors">
+        <i class="alerts"></i>
+      </div>
+      <footer>
+        <i>&copy; Copyright 2021, BoshEee Coding All right reserved</i>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

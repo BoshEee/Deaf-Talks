@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  background-color: #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 900px;
+  border: #ecb390 1px solid;
+  border-radius: 5px;
+}
+
+.container button {
+  background-color: #df7861;
+  color: #fff;
+  border: none;
+  padding: 16px 36px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.container button:hover {
+  background-color: #ecb390;
+  color: #df7861;
+  cursor: pointer;
+  border: none;
+}
+
+.container .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .active {
+  background-color: #61df9a;
+}
+
+.to-speech .contentToRead {
+  width: 360px;
+  max-width: 360px;
+  height: 100px;
+  border: #df7861 2px solid;
+  padding: 5px;
+}
+
+.speech-output {
+  padding: 20px 40px;
+  background-color: #d4e2d4;
+  width: 290px;
+  height: 100px;
+  border: #df7861 2px solid;
+  margin: 5px;
+}
+
+.speech-output .contentToRead {
+  max-height: 100px;
+  max-width: 290px;
+  min-height: 100px;
+  min-width: 290px;
+}
+
+.errors {
+  text-transform: uppercase;
+  color: #df7861;
+  font-size: 18px;
+}
+
+header {
+  margin: 10px;
+  width: 390px;
+}
+
+header h2 {
+  color: #df7861;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+}
+
+header p {
+  text-align: justify;
+  margin: 10px;
+}
+
+footer {
+  background-color: #d4e2d4;
+  padding: 12px;
+}
+
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #dadada;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #df7861;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #61df9a;
+}
+/*# sourceMappingURL=style.css.map */
