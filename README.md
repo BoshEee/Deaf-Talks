@@ -1,6 +1,8 @@
 # Deaf-Talks
 Welcome to deafs talk! With this app you can talk safly with your deaf
           partner while you are driving!
+          
+          Check it out ! => https://bosheee.github.io/Deaf-Talks/
 
 # How It Works?
 
